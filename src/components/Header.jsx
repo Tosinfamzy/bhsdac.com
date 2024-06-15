@@ -1,4 +1,5 @@
 import Logo from '../assets/Logo/PNG/BlessedHopeLogoLandscape(White).png';
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa6";
 
 
 const Header = () => {
@@ -23,12 +24,12 @@ const Header = () => {
 						Convention
 					</a>
 				</div>
-				{/* <div className='flex space-x-4 '>
-					<a href=''><facebookLogo /></a>
-					<a href=''><instaLogo /></a>
-					<a href=''><twitterLogo /></a>
-					<a href=''><youtubeLogo /></a>
-				</div> */}
+				<div className='flex space-x-4 mr-6'>
+					<a href=''><FaFacebookF color='white'/></a>
+					<a href=''><FaInstagram color='white'/></a>
+					<a href=''><FaTwitter color='white'/></a>
+					<a href=''><FaYoutube color='white'/></a>
+				</div> 
 			</nav>
 		</div>
 	);
