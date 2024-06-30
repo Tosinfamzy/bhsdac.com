@@ -52,7 +52,7 @@ function App() {
           working together to enlarge the Kingdom of God.
         </p>
       </div>
-      <WhiteContainer>
+      <WhiteContainer className={`px-5`}>
         <div className="grid grid-cols-4 gap-4">
           <CardImage image={pastor} name="Pastor Ayodeji Adesina" />
           <CardImage
@@ -76,7 +76,7 @@ function App() {
             image={elderFikayo}
             name="Elder Fikayo Aremu"
           />
-          <CardImage className="" image={elderBisi} name="Elder Bisi" />
+          <CardImage className="" image={elderBisi} name="Elder Bisi Oyewole" />
         </div>
       </WhiteContainer>
       <Footer />
