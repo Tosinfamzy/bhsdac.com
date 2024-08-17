@@ -8,7 +8,7 @@ import {
 
 const Header = () => {
   return (
-    <div className="bg-[#2B41BB]">
+    <div className="bg-[#2B41BB] sm:w-full">
       <nav className="flex items-center justify-between">
         <img src={Logo} alt="Blessed Hope Logo" className="h-24 w-56" />
         <div className="flex space-x-4">

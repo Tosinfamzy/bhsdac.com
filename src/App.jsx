@@ -16,15 +16,15 @@ import pastor from "./assets/pastoral/pastor.jpg";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <>
+    <div className="w-screen">
       <Header />
       <Hero />
       <WhiteContainer>
         <div className="flex flex-col justify-center items-center">
-          <p className="font-sans font-bold text-2xl text-blessed-blue mt-8 mb-2">
+          <p className="font-sans font-bold text-2xl text-blessed-blue mt-8 md:mb-2 pl-4 md:pl-0">
             JOIN US FOR WORSHIP EVERY SATURDAY
           </p>
-          <p className="font-sans font-bold text-2xl text-yellow-400 mb-6">
+          <p className="font-sans font-bold text-2xl text-yellow-400 mb-6 pl-4 md:pl-0">
             CENTER PRIORY HILL, DARTFORD, DA1 2ES
           </p>
 
@@ -40,7 +40,7 @@ function App() {
           <img src={innerImg} alt="innerImage" />
         </div>
       </div>
-      <div className="my-6 ">
+      <div className="my-9" style={{ color: "#273375" }}>
         <h3 className="font-sans font-bold text-3xl text-center uppercase">
           Pastoral Team
         </h3>
@@ -53,34 +53,52 @@ function App() {
         </p>
       </div>
       <WhiteContainer className={`px-5`}>
-        <div className="grid grid-cols-4 gap-4">
-          <CardImage image={pastor} name="Pastor Ayodeji Adesina" />
+        <div className="grid grid-cols-3 gap-3 lg:grid-cols-4 lg:gap-4">
+          <CardImage
+            image={pastor}
+            name="Pastor Ayodeji Adesina"
+            title={"(Lay Pastor)"}
+          />
           <CardImage
             className=""
             image={elderKenny}
             name="Elder Kehinde Jegede"
+            title={"(First Elder)"}
           />
           <CardImage
             className=""
             image={elderBolaji}
             name="Elder Bolaji Aborisade"
+            title={"(Elder)"}
           />
           <CardImage
             className=""
             image={elderOlatunde}
             name="Elder Temitope Olatunde"
+            title={"(Elder)"}
           />
-          <CardImage className="" image={elderwale} name="Elder Wale Oladipo" />
+          <CardImage
+            className=""
+            image={elderwale}
+            name="Elder Wale Oladipo"
+            title={"(Elder)"}
+          />
           <CardImage
             className=""
             image={elderFikayo}
             name="Elder Fikayo Aremu"
+            title={"(Elder)"}
           />
-          <CardImage className="" image={elderBisi} name="Elder Bisi Oyewole" />
+          <CardImage
+            className=""
+            image={elderBisi}
+            name="Elder Bisi Oyewole"
+            title={"(Elder)"}
+          />
         </div>
       </WhiteContainer>
       <Footer />
-    </>
+    </div>
   );
 }
 
