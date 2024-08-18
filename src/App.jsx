@@ -14,6 +14,7 @@ import elderBisi from "./assets/pastoral/elderBisi.jpg";
 import elderOlatunde from "./assets/pastoral/elderolatunde.jpg";
 import pastor from "./assets/pastoral/pastor.jpg";
 import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="w-screen">
@@ -52,8 +53,8 @@ function App() {
           working together to enlarge the Kingdom of God.
         </p>
       </div>
-      <WhiteContainer className={`px-5`}>
-        <div className="grid grid-cols-3 gap-3 lg:grid-cols-4 lg:gap-4">
+      <WhiteContainer className={`px-5, overscroll-x-none`}>
+        <div className="grid grid-cols-3 gap-3 lg:grid-cols-4 lg:gap-4 overscroll-x-none">
           <CardImage
             image={pastor}
             name="Pastor Ayodeji Adesina"

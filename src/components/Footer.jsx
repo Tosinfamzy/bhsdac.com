@@ -7,32 +7,32 @@ import {
 import footerImage from "../assets/Logo/PNG/BlessedHopeSymbolBlue(White).png";
 const Footer = () => {
   return (
-    <div className="grid grid-cols-3 items-center px-10 h-[365px] mt-6 bg-[#040C36] text-white ">
-      <div className="flex flex-col text-2xl">
+    <div className="grid grid-cols-3 items-center lg:px-10 h-[365px] mt-6 bg-[#040C36] text-white ">
+      <div className="flex flex-col text-sm lg:text-2xl">
         <img src={footerImage} style={{ width: "77px" }}></img>
         <p>© Copyright BLESSED HOPE</p>
         <p>01322838191</p>
         <p>Priory Hill, Dartford, DA1 2ES</p>
         <p>pastor@bhsdac.org.uk</p>
       </div>
-      <div className="flex flex-col text-2xl">
+      <div className="flex flex-col text-base lg:text-2xl">
         <p>Quick Links</p>
         <p>About Us</p>
         <p>Contact Us</p>
         <p>Events</p>
       </div>
-      <div className="flex space-x-4 mr-6">
+      <div className="flex lg:space-x-4 lg:mr-6">
         <a href="https://www.facebook.com/blessedhope.sdac" target="_blank">
-          <FaFacebookF color="white" size={40} />
+          <FaFacebookF color="white" size={35} />
         </a>
         <a href="https://www.instagram.com/blessedhope.sda/" target="_blank">
-          <FaInstagram color="white" size={40} />
+          <FaInstagram color="white" size={35} />
         </a>
         <a href="https://twitter.com/blessedhopesda?lang=en" target="_blank">
-          <FaTwitter color="white" size={40} />
+          <FaTwitter color="white" size={35} />
         </a>
         <a href="https://www.youtube.com/@BHSDAC" target="_blank">
-          <FaYoutube color="white" size={40} />
+          <FaYoutube color="white" size={35} />
         </a>
       </div>
     </div>

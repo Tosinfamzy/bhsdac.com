@@ -8,7 +8,7 @@ const CardImage = ({ image, name, title }) => {
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={image}
     >
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h5 className=" text-xl lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white overscroll-x-none">
         {name}
       </h5>
       <span className="text-sm text-gray-500 dark:text-gray-400">{title}</span>
