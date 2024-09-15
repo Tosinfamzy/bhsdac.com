@@ -14,6 +14,7 @@ import elderBisi from "./assets/pastoral/elderBisi.jpg";
 import elderOlatunde from "./assets/pastoral/elderolatunde.jpg";
 import pastor from "./assets/pastoral/pastor.jpg";
 import Footer from "./components/Footer";
+import LatestYoutubeVideo from "./components/LatestYoutubeVideo";
 
 function App() {
   return (
@@ -97,6 +98,12 @@ function App() {
             title={"(Elder)"}
           />
         </div>
+      </WhiteContainer>
+      <WhiteContainer
+        className="flex justify-center items-center mt-4"
+        style={{ color: "#273375" }}
+      >
+        <LatestYoutubeVideo />
       </WhiteContainer>
       <Footer />
     </div>
