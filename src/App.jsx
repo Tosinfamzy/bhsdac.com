@@ -2,7 +2,6 @@ import "./App.css";
 import WhiteContainer from "./components/WhiteContainer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import bannerImg from "./assets/banner.png";
 import backgroundImage from "../src/assets/hero/heroImageTouched.png";
 import innerImg from "../src/assets/Inner.png";
 import CardImage from "./components/CardImage";
@@ -15,6 +14,8 @@ import elderOlatunde from "./assets/pastoral/elderolatunde.jpg";
 import pastor from "./assets/pastoral/pastor.jpg";
 import Footer from "./components/Footer";
 import LatestYoutubeVideo from "./components/LatestYoutubeVideo";
+import CarouselComponent from "./components/Carousel";
+import BlackContainer from "./components/BlackContainer";
 
 function App() {
   return (
@@ -29,11 +30,13 @@ function App() {
           <p className="font-sans font-bold text-2xl text-yellow-400 mb-6 pl-4 md:pl-0">
             CENTER PRIORY HILL, DARTFORD, DA1 2ES
           </p>
-
-          {/* TODO: This should be a component */}
-          <img src={bannerImg} alt="bannerImage" />
         </div>
       </WhiteContainer>
+      <BlackContainer className="h-[500px]">
+        <div className="">
+          <CarouselComponent />
+        </div>
+      </BlackContainer>
       <div
         className="h-[668px] flex justify-center items-center bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}
