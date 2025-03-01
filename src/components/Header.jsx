@@ -53,7 +53,7 @@ const Header = () => {
                 <Link to="/about">About Us</Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to="/portfolio">Events</Link>
+                <Link to="/events">Events</Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <Link to="/contact">Contact</Link>
@@ -68,7 +68,7 @@ const Header = () => {
           <Link to="/about" className="p-1 px-3 text-white">
             About Us
           </Link>
-          <Link to="/portfolio" className="p-1 px-3 text-white">
+          <Link to="/events" className="p-1 px-3 text-white">
             Events
           </Link>
           <Link to="/contact" className="p-1 px-3 text-white">

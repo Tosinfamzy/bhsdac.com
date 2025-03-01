@@ -4,6 +4,7 @@ import ContactForm from "../components/ContactForm";
 import Layout from "../components/Layout";
 import About from "../components/About"; // Import the About component
 import Convention from "../components/Convention"; // Import the Convention component
+import Events from "../components/Events"; // Import the Events component
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,14 @@ export const router = createBrowserRouter([
     element: (
       <Layout>
         <Convention />
+      </Layout>
+    ),
+  },
+  {
+    path: "/events",
+    element: (
+      <Layout>
+        <Events />
       </Layout>
     ),
   },
