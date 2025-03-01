@@ -1,6 +1,6 @@
 import "./App.css";
 import WhiteContainer from "./components/WhiteContainer";
-import Header from "./components/Header";
+import BlackContainer from "./components/BlackContainer";
 import Hero from "./components/Hero";
 import backgroundImage from "../src/assets/hero/heroImageTouched.png";
 import innerImg from "../src/assets/Inner.png";
@@ -15,13 +15,11 @@ import pastor from "./assets/pastoral/pastor.jpg";
 import Footer from "./components/Footer";
 import LatestYoutubeVideo from "./components/LatestYoutubeVideo";
 import CarouselComponent from "./components/Carousel";
-import BlackContainer from "./components/BlackContainer";
-import ContactForm from "./components/ContactForm";
+// import ContactForm from "./components/ContactForm"; // Remove this import
 
 function App() {
   return (
     <div className="w-screen">
-      <Header />
       <Hero />
       <WhiteContainer>
         <div className="flex flex-col justify-center items-center">
@@ -109,9 +107,9 @@ function App() {
       >
         <LatestYoutubeVideo />
       </WhiteContainer>
-      <WhiteContainer>
-        <ContactForm />
-      </WhiteContainer>
+      {/* <WhiteContainer>
+        <ContactForm /> Remove this line
+      </WhiteContainer> */}
       <Footer />
     </div>
   );
