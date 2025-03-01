@@ -3,6 +3,7 @@ import App from "../App";
 import ContactForm from "../components/ContactForm";
 import Layout from "../components/Layout";
 import About from "../components/About"; // Import the About component
+import Convention from "../components/Convention"; // Import the Convention component
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,14 @@ export const router = createBrowserRouter([
     element: (
       <Layout>
         <About />
+      </Layout>
+    ),
+  },
+  {
+    path: "/convention",
+    element: (
+      <Layout>
+        <Convention />
       </Layout>
     ),
   },
