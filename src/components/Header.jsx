@@ -58,21 +58,21 @@ const Header = () => {
           </div>
         </div>
         <div className="hidden lg:flex lg:space-x-4">
-          <a href="" className="p-1 px-3 text-white">
+          <Link to="/" className="p-1 px-3 text-white">
             Home
-          </a>
-          <a href="" className="p-1 px-3 text-white">
+          </Link>
+          <Link to="/about" className="p-1 px-3 text-white">
             About Us
-          </a>
-          <a href="" className="p-1 px-3 text-white">
+          </Link>
+          <Link to="/portfolio" className="p-1 px-3 text-white">
             Events
-          </a>
-          <a href="" className="p-1 px-3 text-white">
+          </Link>
+          <Link to="/contact" className="p-1 px-3 text-white">
             Contact
-          </a>
-          <a href="" className="p-1 px-3 text-white">
+          </Link>
+          <Link to="/convention" className="p-1 px-3 text-white">
             Convention
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:space-x-4 lg:mr-6">
           <a href="https://www.facebook.com/blessedhope.sdac" target="_blank">

@@ -16,6 +16,7 @@ import Footer from "./components/Footer";
 import LatestYoutubeVideo from "./components/LatestYoutubeVideo";
 import CarouselComponent from "./components/Carousel";
 import BlackContainer from "./components/BlackContainer";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -107,6 +108,9 @@ function App() {
         style={{ color: "#273375" }}
       >
         <LatestYoutubeVideo />
+      </WhiteContainer>
+      <WhiteContainer>
+        <ContactForm />
       </WhiteContainer>
       <Footer />
     </div>
