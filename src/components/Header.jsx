@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa6";
 
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -45,13 +46,13 @@ const Header = () => {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">About Us</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Events</a>
+                <Link to="/portfolio">Events</Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
