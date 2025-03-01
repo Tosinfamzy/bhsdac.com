@@ -14,8 +14,12 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <div className="bg-[#2B41BB] sm:w-full">
-      <nav className="flex items-center justify-between">
-        <img src={Logo} alt="Blessed Hope Logo" className="h-24 w-56" />
+      <nav className="flex items-center justify-between p-4">
+        <img
+          src={Logo}
+          alt="Blessed Hope Logo"
+          className="h-16 w-40 sm:h-24 sm:w-56"
+        />
         <div className="flex lg:hidden">
           <div
             className="space-y-2 pr-2"

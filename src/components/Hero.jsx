@@ -3,7 +3,7 @@ import backgroundImage from "../assets/hero/heroImageTouched.png";
 const Hero = () => {
   return (
     <div
-      className="h-80 lg:h-[668px] md:h-auto flex justify-center items-center bg-cover bg-center bg-no-repeat"
+      className="h-80 lg:h-[668px] md:h-auto flex justify-center items-center bg-cover bg-center bg-no-repeat p-4"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="flex flex-col pl-3 lg:pl-0">
