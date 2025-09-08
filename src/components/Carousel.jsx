@@ -4,30 +4,20 @@ import CorouselImage2 from "../assets/carousel/Website Banners (Welcome to bless
 import CorouselImage3 from "../assets/carousel/Website Banners (reserved seat).png";
 import CorouselImage4 from "../assets/carousel/Website Banners (Divine Encounter).png";
 
+const slides = [CorouselImage1, CorouselImage2, CorouselImage3, CorouselImage4];
+
 function CarouselComponent() {
   return (
-    <div className="h-56 sm:h-64 xl:h-[500px] 2xl:h-96">
+    <div className="mx-auto w-full max-w-6xl rounded-card overflow-hidden shadow-elevated aspect-[16/9] sm:aspect-[21/9] xl:aspect-[1513/668] bg-navy">
       <Carousel indicators={false} controls={false}>
-        <img
-          src={CorouselImage1}
-          alt="..."
-          className="h-full w-full object-fit"
-        />
-        <img
-          src={CorouselImage2}
-          alt="..."
-          className="h-full w-full object-fit"
-        />
-        <img
-          src={CorouselImage3}
-          alt="..."
-          className="h-full w-full object-fit"
-        />
-        <img
-          src={CorouselImage4}
-          alt="..."
-          className="h-full w-full object-fit"
-        />
+        {slides.map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            alt="carousel"
+            className="h-full w-full object-contain object-center bg-navy"
+          />
+        ))}
       </Carousel>
     </div>
   );

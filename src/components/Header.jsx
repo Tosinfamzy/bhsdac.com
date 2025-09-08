@@ -13,8 +13,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="bg-[#2B41BB] sm:w-full">
-      <nav className="flex items-center justify-between p-4">
+    <div className="bg-primary sm:w-full sticky top-0 z-20">
+      <nav className="flex items-center justify-between p-4 max-w-7xl mx-auto">
         <img
           src={Logo}
           alt="Blessed Hope Logo"
@@ -61,7 +61,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="hidden lg:flex lg:space-x-4">
+        <div className="hidden lg:flex lg:space-x-2">
           <Link to="/" className="p-1 px-3 text-white">
             Home
           </Link>

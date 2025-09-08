@@ -1,18 +1,13 @@
-import { Card } from "flowbite-react";
-
 // eslint-disable-next-line react/prop-types
 const CardImage = ({ image, name, title }) => {
   return (
-    <Card
-      className="max-w-sm"
-      imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc={image}
-    >
-      <h5 className=" text-xl lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white overscroll-x-none">
-        {name}
-      </h5>
-      <span className="text-sm text-gray-500 dark:text-gray-400">{title}</span>
-    </Card>
+    <article className="rounded-card overflow-hidden shadow-card bg-primary text-white">
+      <img src={image} alt={name} className="w-full h-64 object-cover" />
+      <div className="p-4">
+        <h5 className="font-bold tracking-tight text-h3 md:text-2xl">{name}</h5>
+        <span className="text-small text-white/80">{title}</span>
+      </div>
+    </article>
   );
 };
 

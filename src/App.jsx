@@ -15,6 +15,8 @@ import pastor from "./assets/pastoral/pastor.jpg";
 import Footer from "./components/Footer";
 import LatestYoutubeVideo from "./components/LatestYoutubeVideo";
 import CarouselComponent from "./components/Carousel";
+import FeaturedAnnouncement from "./components/FeaturedAnnouncement";
+import PrayerCta from "./components/PrayerCta";
 // import ContactForm from "./components/ContactForm"; // Remove this import
 
 function App() {
@@ -22,20 +24,19 @@ function App() {
     <div className="w-screen">
       <Hero />
       <WhiteContainer>
-        <div className="flex flex-col justify-center items-center">
-          <p className="font-sans font-bold text-2xl text-blessed-blue mt-8 md:mb-2 pl-4 md:pl-0">
+        <div className="flex flex-col justify-center items-center text-center">
+          <p className="font-sans font-bold text-h3 md:text-3xl text-primary mt-8 md:mb-2">
             JOIN US FOR WORSHIP EVERY SATURDAY
           </p>
-          <p className="font-sans font-bold text-2xl text-yellow-400 mb-6 pl-4 md:pl-0">
+          <p className="font-sans font-bold text-h3 md:text-3xl text-accent-yellow mb-6">
             CENTER PRIORY HILL, DARTFORD, DA1 2ES
           </p>
         </div>
       </WhiteContainer>
-      <BlackContainer className="h-[500px]">
-        <div className="">
-          <CarouselComponent />
-        </div>
+      <BlackContainer className="py-10">
+        <CarouselComponent />
       </BlackContainer>
+      <FeaturedAnnouncement />
       <div
         className="h-[668px] flex justify-center items-center bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -44,8 +45,8 @@ function App() {
           <img src={innerImg} alt="innerImage" />
         </div>
       </div>
-      <div className="my-9" style={{ color: "#273375" }}>
-        <h3 className="font-sans font-bold text-3xl text-center uppercase">
+      <div className="my-9 text-primary">
+        <h3 className="font-sans font-bold text-h3 md:text-3xl text-center uppercase">
           Pastoral Team
         </h3>
         <p className="text-center">
@@ -56,8 +57,8 @@ function App() {
           working together to enlarge the Kingdom of God.
         </p>
       </div>
-      <WhiteContainer className={`px-5, overscroll-x-none`}>
-        <div className="grid grid-cols-3 gap-3 lg:grid-cols-4 lg:gap-4 overscroll-x-none">
+      <WhiteContainer className={`overscroll-x-none`}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overscroll-x-none">
           <CardImage
             image={pastor}
             name="Pastor Ayodeji Adesina"
@@ -101,12 +102,12 @@ function App() {
           />
         </div>
       </WhiteContainer>
-      <WhiteContainer
-        className="flex justify-center items-center mt-4"
-        style={{ color: "#273375" }}
-      >
-        <LatestYoutubeVideo />
+      <WhiteContainer className="mt-4">
+        <div className="flex justify-center items-center text-primary">
+          <LatestYoutubeVideo />
+        </div>
       </WhiteContainer>
+      <PrayerCta />
       {/* <WhiteContainer>
         <ContactForm /> Remove this line
       </WhiteContainer> */}

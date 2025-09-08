@@ -48,19 +48,21 @@ const LatestYoutubeVideo = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-full">
       {videos ? (
-        <iframe
-          width="900"
-          height="506"
-          src={`https://www.youtube.com/embed/${videos}`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Latest YouTube Video"
-          className="aspect-video rounded-md"
-        ></iframe>
+        <div className="aspect-video w-full max-w-5xl">
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${videos}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Latest YouTube Video"
+            className="w-full h-full rounded-card shadow-card"
+          ></iframe>
+        </div>
       ) : (
-        <p>Loading...</p>
+        <p className="text-gray-600">Loading...</p>
       )}
     </div>
   );

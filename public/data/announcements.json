@@ -1,0 +1,23 @@
+[
+  {
+    "id": "divine-encounter",
+    "title": "Divine Encounter",
+    "subtitle": "Monthly Prayer",
+    "footer": "Every Month",
+    "href": "/events"
+  },
+  {
+    "id": "midweek-service",
+    "title": "Midweek Service",
+    "subtitle": "Weekly Worship",
+    "footer": "Every Wednesday",
+    "href": "/events"
+  },
+  {
+    "id": "morning-prayers",
+    "title": "Morning Prayers",
+    "subtitle": "Daily Meeting",
+    "footer": "Every Day",
+    "href": "/events"
+  }
+]

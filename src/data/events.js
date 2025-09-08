@@ -1,0 +1,9 @@
+// Example events data; replace with CMS or API later
+const events = [
+  { id: "evt-1", date: "2025-10-01", title: "Monthly Prayer", time: "10:00 AM" },
+  { id: "evt-2", date: "2025-10-08", title: "Midweek Service", time: "7:00 PM" },
+  { id: "evt-3", date: "2025-10-12", title: "Morning Prayers", time: "6:00 AM" },
+];
+
+export default events;
+
