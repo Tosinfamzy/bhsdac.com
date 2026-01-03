@@ -31,7 +31,9 @@ const FeaturedAnnouncement = () => {
           <h3 className="text-white font-bold uppercase text-h3 md:text-3xl">
             Featured Announcement
           </h3>
-          <p className="text-white/80 text-small">Our weekly programs and events</p>
+          <p className="text-white/80 text-small">
+            Our weekly programs and events
+          </p>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {items.map((item) => (
@@ -42,7 +44,7 @@ const FeaturedAnnouncement = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full aspect-[16/9] object-cover object-center"
+                className="w-full aspect-[16/9] object-fill object-center"
               />
               <div className="p-4">
                 <h4 className="text-primary font-bold text-lg md:text-xl">
