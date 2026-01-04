@@ -2,7 +2,7 @@ import "./App.css";
 import WhiteContainer from "./components/WhiteContainer";
 import BlackContainer from "./components/BlackContainer";
 import Hero from "./components/Hero";
-import backgroundImage from "../src/assets/hero/heroImageTouched.png";
+import backgroundImage from "../src/assets/hero/heroImageTouched.jpg";
 import innerImg from "../src/assets/Inner.png";
 import CardImage from "./components/CardImage";
 import elderwale from "./assets/pastoral/elderwale.jpg";
