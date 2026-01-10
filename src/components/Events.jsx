@@ -1,16 +1,7 @@
-import { useEffect, useState } from "react";
-import eventsFallback from "../data/events";
-import { fetchJson } from "../lib/fetchData";
+import events from "../data/events";
 
 const Events = () => {
-  const [items, setItems] = useState(eventsFallback);
-
-  useEffect(() => {
-    (async () => {
-      const data = await fetchJson("/data/events.json");
-      if (Array.isArray(data) && data.length) setItems(data);
-    })();
-  }, []);
+  const items = events;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-white text-center">
@@ -39,6 +30,9 @@ const Events = () => {
               <p className="text-lg font-bold">
                 {new Date(event.date).toDateString()}
               </p>
+              {event.recurring && (
+                <p className="text-xs text-gray-500">{event.recurring}</p>
+              )}
             </div>
           </div>
         ))}
