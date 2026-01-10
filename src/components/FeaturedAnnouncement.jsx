@@ -54,6 +54,8 @@ const FeaturedAnnouncement = () => {
                 <div className="mt-3 text-right">
                   <a
                     href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="inline-block text-navy bg-accent-yellow rounded-button text-xs font-semibold px-3 py-1 hover:brightness-110"
                     aria-label={`${item.title} details`}
                   >

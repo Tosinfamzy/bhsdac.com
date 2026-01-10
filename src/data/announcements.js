@@ -14,18 +14,18 @@ const announcements = [
   {
     id: "midweek-service",
     title: "Midweek Service",
-    subtitle: "Weekly Worship",
-    footer: "Every Wednesday",
+    subtitle: "Wednesdays @ 8pm (UK Time)",
+    footer: "Join on Zoom",
     image: ann2,
-    href: "/events",
+    href: "https://us02web.zoom.us/j/8940993893?pwd=K3JweFJqcE1BUVQrakhXMzBTdFFrdz09",
   },
   {
     id: "morning-prayers",
     title: "Morning Prayers",
-    subtitle: "Daily Meeting",
-    footer: "Every Day",
+    subtitle: "Daily @ 6:00am (UK Time)",
+    footer: "Join on Zoom",
     image: ann3,
-    href: "/events",
+    href: "https://us05web.zoom.us/j/81218110088?pwd=a3hpNi8wWE5TNDd6T1FZT0E0d2xMZz09",
   },
 ];
 
