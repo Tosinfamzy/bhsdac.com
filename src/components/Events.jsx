@@ -24,6 +24,16 @@ const Events = () => {
             <div className="text-left">
               <p className="text-lg font-bold text-primary">{event.title}</p>
               <p className="text-sm text-gray-600">{event.time}</p>
+              {event.link && (
+                <a
+                  href={event.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-navy bg-accent-yellow rounded-button text-xs font-semibold px-3 py-1 hover:brightness-110"
+                >
+                  Join on Zoom
+                </a>
+              )}
             </div>
             <div className="text-right">
               <p className="text-lg font-bold">

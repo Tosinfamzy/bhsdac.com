@@ -1,8 +1,20 @@
 // Example events data; replace with CMS or API later
 const events = [
   { id: "evt-1", date: "2025-10-01", title: "Monthly Prayer", time: "10:00 AM" },
-  { id: "evt-2", date: "2025-10-08", title: "Midweek Service", time: "7:00 PM" },
-  { id: "evt-3", date: "2025-10-12", title: "Morning Prayers", time: "6:00 AM" },
+  {
+    id: "evt-2",
+    date: "2025-10-08",
+    title: "Midweek Service",
+    time: "8:00 PM (UK Time)",
+    link: "https://us02web.zoom.us/j/8940993893?pwd=K3JweFJqcE1BUVQrakhXMzBTdFFrdz09",
+  },
+  {
+    id: "evt-3",
+    date: "2025-10-12",
+    title: "Morning Prayers",
+    time: "6:00 AM (UK Time)",
+    link: "https://us05web.zoom.us/j/81218110088?pwd=a3hpNi8wWE5TNDd6T1FZT0E0d2xMZz09",
+  },
 ];
 
 export default events;
