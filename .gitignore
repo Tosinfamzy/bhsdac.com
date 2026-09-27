@@ -25,3 +25,8 @@ dist-ssr
 .env
 .vercel
 .env*.local
+
+# Synced assets from Google Drive (use `npm run sync-assets` to pull)
+src/assets/sabbath-photos/
+src/assets/programs/
+src/assets/media/

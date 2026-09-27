@@ -10,6 +10,10 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
+  overrides: [
+    // Vercel serverless functions run on Node, not in the browser.
+    { files: ['api/**/*.js'], env: { node: true, browser: false } },
+  ],
   plugins: ['react-refresh'],
   rules: {
     'react/jsx-no-target-blank': 'off',

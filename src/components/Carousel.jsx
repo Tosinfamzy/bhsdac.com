@@ -1,24 +1,33 @@
-import { Carousel } from "flowbite-react";
-import CorouselImage1 from "../assets/carousel/Website Banners (Welcome).png";
-import CorouselImage2 from "../assets/carousel/Website Banners (Welcome to blessed hope).png";
-import CorouselImage3 from "../assets/carousel/Website Banners (reserved seat).png";
-import CorouselImage4 from "../assets/carousel/Website Banners (Divine Encounter).png";
+import { useState, useEffect } from "react";
+import slide1 from "../assets/optimized/carousel/welcome.webp";
+import slide2 from "../assets/optimized/carousel/welcome-blessed-hope.webp";
+import slide3 from "../assets/optimized/carousel/reserved-seat.webp";
+import slide4 from "../assets/optimized/carousel/divine-encounter.webp";
 
-const slides = [CorouselImage1, CorouselImage2, CorouselImage3, CorouselImage4];
+const slides = [slide1, slide2, slide3, slide4];
 
 function CarouselComponent() {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActive((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div className="mx-auto w-full max-w-6xl rounded-card overflow-hidden shadow-elevated aspect-[16/9] sm:aspect-[21/9] xl:aspect-[1513/668] bg-navy">
-      <Carousel indicators={false} controls={false}>
-        {slides.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt="carousel"
-            className="h-full w-full object-contain object-center bg-navy"
-          />
-        ))}
-      </Carousel>
+    <div className="relative mx-auto w-full max-w-6xl rounded-card overflow-hidden shadow-elevated aspect-[16/9] sm:aspect-[21/9] xl:aspect-[1513/668] bg-navy">
+      {slides.map((src, i) => (
+        <img
+          key={i}
+          src={src}
+          alt={`Slide ${i + 1}`}
+          className={`absolute inset-0 h-full w-full object-contain object-center transition-opacity duration-700 ${
+            i === active ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
     </div>
   );
 }

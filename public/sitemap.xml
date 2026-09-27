@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://bhsdac-com.vercel.app/</loc><priority>1.0</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/programs</loc><priority>0.9</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/media</loc><priority>0.9</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/giving</loc><priority>0.9</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/events</loc><priority>0.8</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/community-outreach</loc><priority>0.8</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/empowerment</loc><priority>0.8</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/adventurer-pathfinder</loc><priority>0.8</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/convention</loc><priority>0.7</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/contact</loc><priority>0.7</priority></url>
+  <url><loc>https://bhsdac-com.vercel.app/about</loc><priority>0.6</priority></url>
+</urlset>

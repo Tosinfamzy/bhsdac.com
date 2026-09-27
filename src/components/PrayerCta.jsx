@@ -1,4 +1,4 @@
-import bg from "../assets/hero/heroImageTouched.jpg";
+import bg from "../assets/optimized/hero/heroImageTouched.webp";
 
 const PrayerCta = () => {
   return (

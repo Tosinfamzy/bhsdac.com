@@ -1,6 +1,6 @@
-import ann1 from "../assets/carousel/Website Banners (Divine Encounter).png";
-import ann2 from "../assets/carousel/Website Banners (reserved seat).png";
-import ann3 from "../assets/carousel/Website Banners (Welcome).png";
+import ann1 from "../assets/optimized/announcements/divine-encounter.webp";
+import ann2 from "../assets/optimized/announcements/reserved-seat.webp";
+import ann3 from "../assets/optimized/announcements/welcome.webp";
 
 const announcements = [
   {

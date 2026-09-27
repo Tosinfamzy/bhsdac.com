@@ -7,25 +7,21 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-assets": "bash scripts/sync-assets.sh",
+    "sync-assets:dry": "bash scripts/sync-assets.sh --dry-run",
+    "optimize-images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.52.1",
+    "@tanstack/react-query": "^5.96.2",
     "axios": "^1.7.7",
-    "flowbite-react": "^0.10.1",
-    "framer-motion": "^12.6.2",
-    "gapi-script": "^1.2.0",
-    "localforage": "^1.10.0",
-    "match-sorter": "^6.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.26.1",
-    "sort-by": "^0.0.2",
     "vite-plugin-svgr": "^4.2.0"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.52.0",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
@@ -35,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
   }
