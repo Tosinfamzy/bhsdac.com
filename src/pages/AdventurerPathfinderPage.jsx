@@ -25,7 +25,7 @@ const PlaceholderImage = ({ label }) => (
 );
 
 const AdventurerPathfinderPage = () => {
-  usePageMeta("Adventurer & Pathfinder", "Youth programmes building character and faith through the Adventurer Club (ages 6-9) and Pathfinder Club (ages 10-15).");
+  usePageMeta();
   return (
     <div>
       <PageHero

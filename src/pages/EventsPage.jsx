@@ -21,7 +21,7 @@ const formatDates = (dates) => {
 };
 
 const EventsPage = () => {
-  usePageMeta("Events", "Upcoming events and gatherings at Blessed Hope SDA Church, Dartford.");
+  usePageMeta();
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);

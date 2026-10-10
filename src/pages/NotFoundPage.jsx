@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import usePageMeta from "../hooks/usePageMeta";
 
 const NotFoundPage = () => {
-  usePageMeta("Page Not Found");
+  usePageMeta();
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
       <h1 className="text-6xl font-bold text-primary">404</h1>

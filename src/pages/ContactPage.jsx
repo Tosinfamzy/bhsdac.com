@@ -16,7 +16,7 @@ import {
 } from "react-icons/fi";
 
 const ContactPage = () => {
-  usePageMeta("Contact Us", "Get in touch with Blessed Hope SDA Church. Find our address, phone number, and send us a message.");
+  usePageMeta();
   const [formData, setFormData] = useState({
     name: "",
     email: "",

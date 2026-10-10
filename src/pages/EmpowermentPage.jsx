@@ -8,7 +8,7 @@ import VideoEmbed from "../components/shared/VideoEmbed";
 import empowermentPillars from "../data/empowerment";
 
 const EmpowermentPage = () => {
-  usePageMeta("Empowerment", "Equipping our community with resources in financial literacy, immigration support, and health & wellness.");
+  usePageMeta();
   return (
     <div>
       <PageHero

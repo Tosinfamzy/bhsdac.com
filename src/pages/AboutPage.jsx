@@ -3,7 +3,7 @@ import PageHero from "../components/shared/PageHero";
 import WhiteContainer from "../components/WhiteContainer";
 
 const AboutPage = () => {
-  usePageMeta("About Us", "Learn about Blessed Hope SDA Church — our community, worship, and how to join us.");
+  usePageMeta();
   return (
     <div className="min-h-screen bg-white">
       <PageHero

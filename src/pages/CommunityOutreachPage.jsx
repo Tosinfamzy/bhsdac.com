@@ -20,7 +20,7 @@ const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery
 
 
 const CommunityOutreachPage = () => {
-  usePageMeta("Community Outreach", "Serving our neighbours through care home visits, Christmas gift giving, and community support programmes.");
+  usePageMeta();
   return (
     <div>
       <PageHero

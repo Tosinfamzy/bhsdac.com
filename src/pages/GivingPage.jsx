@@ -32,7 +32,7 @@ const FaqItem = ({ question, answer }) => {
 };
 
 const GivingPage = () => {
-  usePageMeta("Giving", "Support the mission of Blessed Hope SDA Church through tithes, offerings, and donations by card or bank transfer.");
+  usePageMeta();
   return (
     <div>
       <PageHero

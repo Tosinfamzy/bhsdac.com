@@ -5,7 +5,7 @@ import CTAButton from "../components/shared/CTAButton";
 import conventionBanner from "../assets/optimized/convention/Beyond Comprehension Landscape.webp";
 
 const ConventionPage = () => {
-  usePageMeta("Annual Convention", "Beyond Comprehension — our annual convention for worship, fellowship, and spiritual renewal.");
+  usePageMeta();
   return (
     <div>
       <PageHero

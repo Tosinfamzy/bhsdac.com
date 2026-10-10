@@ -84,7 +84,7 @@ const ProgramCard = ({ program, index }) => {
 };
 
 const ProgramsPage = () => {
-  usePageMeta("Programs", "Weekly worship programs including Sabbath Celebration, Midweek Bible Study, and Daily Morning Prayers.");
+  usePageMeta();
   const { hash } = useLocation();
 
   useEffect(() => {

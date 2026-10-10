@@ -11,7 +11,7 @@ import AudioEmbed from "../components/shared/AudioEmbed";
 import { FiPlay, FiRadio, FiHeadphones, FiYoutube } from "react-icons/fi";
 
 const MediaPage = () => {
-  usePageMeta("Media", "Watch our services on YouTube and listen to BHBS live on Mixlr or our podcast on Spotify.");
+  usePageMeta();
   const { data: videos = [], isLoading: loading } = useYouTubeVideos({ maxResults: 9 });
   const [activeTab, setActiveTab] = useState("video");
 

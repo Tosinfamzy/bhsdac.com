@@ -46,7 +46,7 @@ const ministryHighlights = [
 ];
 
 function HomePage() {
-  usePageMeta("Welcome", "Blessed Hope Seventh-day Adventist Church in Dartford. Join us for worship every Saturday.");
+  usePageMeta();
   return (
     <div className="w-full">
       <Hero />
